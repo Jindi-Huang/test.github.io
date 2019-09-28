@@ -67,7 +67,7 @@ gitalk:
   clientSecret: 0440a344858c52cf28f304300d165f579ff15804    #生成的clientSecret
   repo: yoursilver.github.io    #仓库名称
   owner: yoursilver    #github用户名
-  admin: qiubaiying
+  admin: yoursilver
   distractionFreeMode: true    #是否启用类似FB的阴影遮罩
 
 # gitalk:
