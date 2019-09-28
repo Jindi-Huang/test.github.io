@@ -68,6 +68,7 @@ gitalk:
   repo: yoursilver.github.io    #仓库名称
   owner: yoursilver    #github用户名
   admin: yoursilver
+  id: md5(window.location.pathname)
   distractionFreeMode: true #是否启用类似FB的阴影遮罩
 
 
