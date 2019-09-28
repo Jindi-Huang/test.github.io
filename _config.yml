@@ -57,19 +57,19 @@ kramdown:
 
 # 评论系统
 # Disqus（https://disqus.com/）
-disqus_username: disqus_QmgeqpLAvl
+# disqus_username: disqus_QmgeqpLAvl
 # disqus_username: qiubaiying
 
 # Gitalk
-# gitalk:
-#   enable: True   #是否开启Gitalk评论
-#   clientID: a01046b3a6a15a92834a                            #生成的clientID
-#   clientSecret: 0440a344858c52cf28f304300d165f579ff15804    #生成的clientSecret
-#   repo: yoursilver.github.io    #仓库名称
-#   owner: yoursilver    #github用户名
-#   admin: yoursilver
-#   id: md5(window.location.pathname)
-#   distractionFreeMode: true #是否启用类似FB的阴影遮罩
+gitalk:
+  enable: True   #是否开启Gitalk评论
+  clientID: a01046b3a6a15a92834a                            #生成的clientID
+  clientSecret: 0440a344858c52cf28f304300d165f579ff15804    #生成的clientSecret
+  repo: yoursilver.github.io    #仓库名称
+  owner: yoursilver    #github用户名
+  admin: qiubaiying
+  id: md5(window.location.pathname)
+  distractionFreeMode: true #是否启用类似FB的阴影遮罩
 
 
 # 统计
