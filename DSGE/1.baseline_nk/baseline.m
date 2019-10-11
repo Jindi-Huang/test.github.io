@@ -84,4 +84,4 @@ hold on
 plot(0:1:15,nka.oo_.irfs.a_e_a,'s-','MarkerSize',4)
 title('shocks')
 
-savefig()
+savefig('Baseline')
