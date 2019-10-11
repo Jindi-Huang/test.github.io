@@ -13,12 +13,12 @@ Preprocessing completed.
 STEADY-STATE RESULTS:
 
 yt  		 0
-yn  		 0.0506831
-y   		 0.0506831
-w   		 -0.422359
-wn  		 -0.422359
+yn  		 -0.0820974
+y   		 -0.0820974
+w   		 -0.378099
+wn  		 -0.378099
 wt  		 0
-n   		 0.0675775
+n   		 -0.109463
 a   		 0
 Pip 		 0
 Piw 		 0
@@ -30,7 +30,6 @@ v   		 0
 EIGENVALUES:
          Modulus             Real        Imaginary
 
-       3.166e-19        3.166e-19                0
              0.5              0.5                0
              0.5              0.5                0
           0.8429           0.8429                0
@@ -50,9 +49,9 @@ MODEL SUMMARY
 
   Number of variables:         14
   Number of stochastic shocks: 3
-  Number of state variables:   5
+  Number of state variables:   4
   Number of jumpers:           3
-  Number of static variables:  6
+  Number of static variables:  7
 
 
 MATRIX OF COVARIANCE OF EXOGENOUS SHOCKS
@@ -63,9 +62,8 @@ e_v          0.000000  0.000000  0.062500
 
 POLICY AND TRANSITION FUNCTIONS
                                   yt             Pip             Piw               w
-Constant                           0               0               0       -0.422359
-wn(-1)                     -0.231334        0.099305       -0.057750        0.842945
-wt(-1)                     -0.231334        0.099305       -0.057750        0.842945
+Constant                           0               0               0       -0.378099
+w(-1)                      -0.231334        0.099305       -0.057750        0.842945
 a(-1)                      -0.491517       -0.162567       -0.119915        0.042652
 z(-1)                       0.384384        0.008217        0.019906        0.011689
 v(-1)                      -0.768768       -0.016434       -0.039812       -0.023379
@@ -79,7 +77,7 @@ VARIABLE         MEAN  STD. DEV.   VARIANCE
 yt             0.0000     0.4412     0.1947
 Pip            0.0000     0.0113     0.0001
 Piw            0.0000     0.0224     0.0005
-w             -0.4224     0.0393     0.0015
+w             -0.3781     0.0393     0.0015
 
 
 

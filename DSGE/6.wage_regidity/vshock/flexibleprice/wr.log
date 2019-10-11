@@ -13,12 +13,12 @@ Preprocessing completed.
 STEADY-STATE RESULTS:
 
 yt  		 0
-yn  		 0.0506831
-y   		 0.0506831
-w   		 -0.422359
-wn  		 -0.422359
+yn  		 -0.0820974
+y   		 -0.0820974
+w   		 -0.378099
+wn  		 -0.378099
 wt  		 0
-n   		 0.0675775
+n   		 -0.109463
 a   		 0
 Pip 		 0
 Piw 		 0
@@ -30,14 +30,13 @@ v   		 0
 EIGENVALUES:
          Modulus             Real        Imaginary
 
-       7.441e-18       -7.441e-18                0
           0.3146           0.3146                0
              0.5              0.5                0
              0.5              0.5                0
              0.9              0.9                0
            1.097            1.093          0.09407
            1.097            1.093         -0.09407
-       3.367e+05        3.367e+05                0
+       3.367e+08        3.367e+08                0
 
 
 There are 3 eigenvalue(s) larger than 1 in modulus 
@@ -50,9 +49,9 @@ MODEL SUMMARY
 
   Number of variables:         14
   Number of stochastic shocks: 3
-  Number of state variables:   5
+  Number of state variables:   4
   Number of jumpers:           3
-  Number of static variables:  6
+  Number of static variables:  7
 
 
 MATRIX OF COVARIANCE OF EXOGENOUS SHOCKS
@@ -63,15 +62,14 @@ e_v          0.000000  0.000000  0.062500
 
 POLICY AND TRANSITION FUNCTIONS
                                   yt             Pip             Piw               w
-Constant                           0               0               0       -0.422359
-wn(-1)                     -0.943917        0.645300       -0.040059        0.314641
-wt(-1)                     -0.943917        0.645300       -0.040059        0.314641
-a(-1)                       0.474389       -0.884621       -0.142752        0.741868
-z(-1)                       0.265159        0.110669        0.022284       -0.088386
-v(-1)                      -0.530318       -0.221339       -0.044567        0.176772
-e_a                         0.527099       -0.982912       -0.158614        0.824298
-e_z                         0.530318        0.221339        0.044567       -0.176772
-e_v                        -1.060635       -0.442677       -0.089134        0.353543
+Constant                           0               0               0       -0.378099
+w(-1)                      -0.943919        0.645301       -0.040059        0.314640
+a(-1)                       0.474391       -0.884622       -0.142753        0.741870
+z(-1)                       0.265158        0.110670        0.022284       -0.088386
+v(-1)                      -0.530317       -0.221339       -0.044567        0.176772
+e_a                         0.527101       -0.982914       -0.158614        0.824300
+e_z                         0.530317        0.221339        0.044567       -0.176772
+e_v                        -1.060634       -0.442679       -0.089134        0.353545
 
 
 THEORETICAL MOMENTS
@@ -79,7 +77,7 @@ VARIABLE         MEAN  STD. DEV.   VARIANCE
 yt             0.0000     0.3780     0.1429
 Pip            0.0000     0.1138     0.0130
 Piw            0.0000     0.0285     0.0008
-w             -0.4224     0.1260     0.0159
+w             -0.3781     0.1260     0.0159
 
 
 

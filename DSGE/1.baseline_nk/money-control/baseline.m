@@ -3,11 +3,11 @@ nkz = load("demand-shock\NKz_results.mat");
 nka = load("tech-shock\NKa_results.mat");
 figure('Name','Baseline','Position',[800,10,800,1200])
 subplot(5,2,1)
-plot(0:1:15,nkv.oo_.irfs.Pi_e_m,'o-','MarkerSize',4)
+plot(0:1:15,nkv.oo_.irfs.yt_e_m,'o-','MarkerSize',4)
 hold on
-plot(0:1:15,nkz.oo_.irfs.Pi_e_z,'d-','MarkerSize',4)
+plot(0:1:15,nkz.oo_.irfs.yt_e_z,'d-','MarkerSize',4)
 hold on
-plot(0:1:15,nka.oo_.irfs.Pi_e_a,'s-','MarkerSize',4)
+plot(0:1:15,nka.oo_.irfs.yt_e_a,'s-','MarkerSize',4)
 title('Output gap')
 
 

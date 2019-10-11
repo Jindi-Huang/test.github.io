@@ -1,12 +1,12 @@
 % * Copyright@yoursilver;Time@2019/10/09
 % * 考察三种情形时技术冲击带来的影响：同时存在工资和价格名义刚性、只有工资刚性且价格灵活调整、只存在价格粘性且工资灵活调整。
-% * 这是只存在价格粘性且工资灵活调整的模型。
+% * 只存在价格粘性且工资灵活调整
 var yt ${\tilde{y}}$ //产出缺口
     yn ${y^n}$  //自然产出
     y ${y}$  //总产出
     w ${w}$  //实际工资
-    wn ${w^n}$  //自然工资
-    wt ${\tilde{wt}}$  //工资缺口
+    wn ${\omega^n}$  //自然真实工资
+    wt ${\tilde{\omega}_t}$  //工资缺口
     n ${n}$  //就业人数
     a ${a}$  //技术
     Pip ${\pi^p}$  //通货膨胀
@@ -31,13 +31,13 @@ parameters
     lambdaw ${\lambda^w}$
     lambdap ${\lambda^p}$
     mup ${\mu^p}$
+    muw ${\mu^w}$
     phi ${\phi}$
     phi_pip ${\Phi_{\pi^p}}$
     phi_piw ${\Phi_{\pi^w}}$
-    phi_y  ${\Phi_{y}}$
+    phi_y  ${\Phi_{y}}$ 
     psi_y ${\psi_{y}}$
     psi_ya ${\psi_{ya}}$
-    psi_wa ${\psi_{wa}}$
     rho ${\rho}$
     rho_v ${\rho_v}$
     rho_a ${\rho_a}$
@@ -54,7 +54,7 @@ ep = 9;
 phi = 5;
 sigma = 1;
 thetap = 3/4;
-thetaw = 1e-6;
+thetaw = 1e-8;
 phi_pip = 1.5;
 phi_piw = 0;
 phi_y = 0.5/4;
@@ -67,9 +67,10 @@ lambdaw = (1-thetaw)/thetaw*(1-beta*thetaw)/(1+ew*phi);
 kappap = (alpha)/(1-alpha)*lambdap;
 kappaw = (sigma+phi/(1-alpha))*lambdaw;
 mup = log((ep)/(ep-1));
-psi_y = (1-alpha)*(log((ep)/(ep-1))-log(1-alpha))/((1-alpha)*sigma+alpha+phi);
+muw = log((ew)/(ew-1));
+psi_y = -(1-alpha)*(mup+muw-log(1-alpha))/((1-alpha)*sigma+alpha+phi);
 psi_ya = (1+phi)/((1-alpha)*sigma+alpha+phi);
-psi_wa = (1-alpha*psi_ya)/(1-alpha);
+//psi_wa = (1-alpha*psi_ya)/(1-alpha);
 
 
 model;
@@ -81,24 +82,24 @@ i = rho+phi_pip*Pip+phi_piw*Piw+phi_y*yt+phi_y*psi_ya*a+v;
 Pip = beta*Pip(1)+kappap*yt+lambdap*wt;
 //4、NKPC之二：工资的菲利普斯曲线
 Piw = beta*Piw(1)+kappaw*yt-lambdaw*wt;
-//5、由定义得出的工资缺口动态方程
-wt = wt(-1)+Piw-Pip-wn+wn(-1);
-//6、自然利率
+//5、自然利率
 rn = rho-(1-rho_a)*psi_ya*sigma*a+(1-rho_z)*z;
-//7、真实工资
-wn = log(1-alpha)-alpha/(1-alpha)*psi_y+psi_wa*a-mup;
-//8、自然产出
-yn = psi_ya*a+psi_y;
-//9、AR(1)冲击
+//6、自然真实工资与自然产出的联立方程
+wn = sigma*yn + phi*(yn-a)/(1-alpha) + muw;
+wn = yn -(yn-a)/(1-alpha)- mup +log(1-alpha);
+//7、由定义得出的工资缺口动态方程
+wt = w-wn;
+//8、生产函数
+y = a+(1-alpha)*n;
+//9、真实工资
+w = w(-1)+Piw-Pip;
+//10、总产出
+y = yt+yn;
+//11、AR(1)冲击
 v = rho_v*v(-1)+ e_v;
 a = rho_a*a(-1)+ e_a;
 z = rho_z*z(-1)+ e_z;
-//10、真实工资
-w = wt+wn;
-//11、总产出
-y = yt+yn;
-//12、总就业
-n = (y-a)/(1-alpha);
+
 end;
 
 
@@ -106,10 +107,10 @@ initval;
 yt = 0;
 yn = psi_y;
 y =  psi_y;
-w = log(1-alpha)-alpha/(1-alpha)*psi_y-mup;
-wn = log(1-alpha)-alpha/(1-alpha)*psi_y-mup;
+w = - alpha/(1-alpha)*psi_y+log(1-alpha)-mup;
+wn = - alpha/(1-alpha)*psi_y+log(1-alpha)-mup;
 wt = 0;
-n = 0;
+n = psi_y/(1-alpha);
 a = 0;
 v = 0;
 Pip = 0;
@@ -130,4 +131,3 @@ stderr 0.25;
 end;
 
 stoch_simul(order=1, irf=16) yt Pip Piw w;
-
