@@ -1,0 +1,131 @@
+Starting Dynare (version 4.5.7).
+Starting preprocessing of the model file ...
+Substitution of endo lags >= 2: added 1 auxiliary variables and equations.
+Found 16 equation(s).
+Evaluating expressions...done
+Computing static model derivatives:
+ - order 1
+Computing dynamic model derivatives:
+ - order 1
+Processing outputs ...
+done
+Preprocessing completed.
+
+STEADY-STATE RESULTS:
+
+yt                		 0
+Pi                		 0
+y                 		 -0.0359603
+yn                		 -0.0359603
+n                 		 -0.047947
+w                 		 -0.275695
+wn                		 -0.275695
+P                 		 0
+I                 		 1
+r                 		 1
+rn                		 1
+m                 		 -4.03596
+v                 		 0
+a                 		 0
+z                 		 0
+
+EIGENVALUES:
+         Modulus             Real        Imaginary
+
+             0.5              0.5                0
+             0.5              0.5                0
+             0.5              0.5                0
+          0.6653           0.6653                0
+             0.9              0.9                0
+               1                1                0
+            1.25             1.25                0
+           1.518            1.518                0
+
+
+There are 2 eigenvalue(s) larger than 1 in modulus 
+for 2 forward-looking variable(s)
+
+The rank condition is verified.
+
+
+MODEL SUMMARY
+
+  Number of variables:         16
+  Number of stochastic shocks: 4
+  Number of state variables:   6
+  Number of jumpers:           2
+  Number of static variables:  8
+
+
+MATRIX OF COVARIANCE OF EXOGENOUS SHOCKS
+Variables         e_a       e_v       e_z       e_m
+e_a          0.000000  0.000000  0.000000  0.000000
+e_v          0.000000  0.000000  0.000000  0.000000
+e_z          0.000000  0.000000  0.250000  0.000000
+e_m          0.000000  0.000000  0.000000  0.000000
+
+POLICY AND TRANSITION FUNCTIONS
+                                  yt              Pi               y               n              wn               P               I               r               m               z
+Constant                           0               0       -0.035960       -0.047947       -0.275695               0        1.000000        1.000000       -4.035960               0
+P(-1)                      -0.665349       -0.334651       -0.665349       -0.887131       -5.101006        0.665349               0        0.222660               0               0
+m(-1)                       1.192415        0.640918        1.192415        1.589887        9.141851        0.640918        0.083333       -0.357293        1.500000               0
+a(-1)                      -0.647537       -0.252463        0.252463       -0.863383       -4.064453       -0.252463               0        0.142729               0               0
+z(-1)                       0.276564        0.056770        0.276564        0.368752        2.120321        0.056770        0.083333        0.073947               0        0.500000
+m(-2)                      -0.527067       -0.306267       -0.527067       -0.702756       -4.040845       -0.306267       -0.083333        0.134633       -0.500000               0
+e_a                        -0.719486       -0.280514        0.280514       -0.959315       -4.516058       -0.280514               0        0.158588               0               0
+e_z                        -0.553127       -0.113539       -0.553127       -0.737503       -4.240643       -0.113539       -0.166667       -0.147893               0       -1.000000
+e_m                         1.054134        0.612533        1.054134        1.405511        8.081690        0.612533        0.166667       -0.269266        1.000000               0
+
+
+THEORETICAL MOMENTS
+VARIABLE         MEAN  STD. DEV.   VARIANCE
+yt             0.0000     0.2965     0.0879
+Pi             0.0000     0.0622     0.0039
+y             -0.0360     0.2965     0.0879
+n             -0.0479     0.3954     0.1563
+wn            -0.2757     2.2734     5.1682
+P                 NaN        NaN        NaN
+I              1.0000     0.0962     0.0093
+r              1.0000     0.0996     0.0099
+m                 NaN        NaN        NaN
+z              0.0000     0.5774     0.3333
+
+
+
+VARIANCE DECOMPOSITION (in percent)
+         e_a     e_v     e_z     e_m
+yt      0.00    0.00  100.00    0.00
+Pi      0.00    0.00  100.00    0.00
+y       0.00    0.00  100.00    0.00
+n       0.00    0.00  100.00    0.00
+wn      0.00    0.00  100.00    0.00
+I       0.00    0.00  100.00    0.00
+r       0.00    0.00  100.00    0.00
+z       0.00    0.00  100.00    0.00
+
+
+
+MATRIX OF CORRELATIONS
+Variables        yt      Pi       y       n      wn       I       r       z
+yt           1.0000  0.9204  1.0000  1.0000  1.0000  0.9668  0.8697  0.9668
+Pi           0.9204  1.0000  0.9204  0.9204  0.9204  0.7899  0.6076  0.7899
+y            1.0000  0.9204  1.0000  1.0000  1.0000  0.9668  0.8697  0.9668
+n            1.0000  0.9204  1.0000  1.0000  1.0000  0.9668  0.8697  0.9668
+wn           1.0000  0.9204  1.0000  1.0000  1.0000  0.9668  0.8697  0.9668
+I            0.9668  0.7899  0.9668  0.9668  0.9668  1.0000  0.9670  1.0000
+r            0.8697  0.6076  0.8697  0.8697  0.8697  0.9670  1.0000  0.9670
+z            0.9668  0.7899  0.9668  0.9668  0.9668  1.0000  0.9670  1.0000
+
+
+
+COEFFICIENTS OF AUTOCORRELATION
+Order         1       2       3       4       5
+yt       0.3510  0.0764 -0.0278 -0.0578 -0.0581
+Pi       0.2490 -0.0425 -0.1324 -0.1401 -0.1192
+y        0.3510  0.0764 -0.0278 -0.0578 -0.0581
+n        0.3510  0.0764 -0.0278 -0.0578 -0.0581
+wn       0.3510  0.0764 -0.0278 -0.0578 -0.0581
+I        0.5000  0.2500  0.1250  0.0625  0.0313
+r        0.6700  0.4481  0.2993  0.1997  0.1332
+z        0.5000  0.2500  0.1250  0.0625  0.0312
+Total computing time : 0h00m01s

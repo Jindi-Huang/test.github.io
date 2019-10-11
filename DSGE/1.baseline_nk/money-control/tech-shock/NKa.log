@@ -1,0 +1,179 @@
+Starting Dynare (version 4.5.7).
+Starting preprocessing of the model file ...
+Substitution of endo lags >= 2: added 1 auxiliary variables and equations.
+Found 16 equation(s).
+Evaluating expressions...done
+Computing static model derivatives:
+ - order 1
+Computing dynamic model derivatives:
+ - order 1
+Processing outputs ...
+done
+Preprocessing completed.
+lank(tit(i,:))],options_.nodisplay,options_.graph_format);
+
+出错 <a href="matlab:matlab.internal.language.introspective.errorDocCallback('NKa', 'D:\work\javascript\yoursilver.github.io\DSGE\1.baseline_nk\money-control\tech-shock\NKa.m', 280)" style="font-weight:bold">NKa</a> (<a href="matlab: opentoline('D:\work\javascript\yoursilver.github.io\DSGE\1.baseline_nk\money-control\tech-shock\NKa.m',280,0)">line 280</a>)
+info = stoch_simul(var_list_);
+
+出错 <a href="matlab:matlab.internal.language.introspective.errorDocCallback('dynare', 'D:\Program Files (x86)\dynare\4.5.7\matlab\dynare.m', 235)" style="font-weight:bold">dynare</a> (<a href="matlab: opentoline('D:\Program Files (x86)\dynare\4.5.7\matlab\dynare.m',235,0)">line 235</a>)
+evalin('base',fname) ;
+} 
+
+baseline
+{引用了不存在的字段 'a_e_a'。
+
+出错 <a href="matlab:matlab.internal.language.introspective.errorDocCallback('baseline', 'D:\work\javascript\yoursilver.github.io\DSGE\1.baseline_nk\money-control\baseline.m', 85)" style="font-weight:bold">baseline</a> (<a href="matlab: opentoline('D:\work\javascript\yoursilver.github.io\DSGE\1.baseline_nk\money-control\baseline.m',85,0)">line 85</a>)
+plot(0:1:15,nka.oo_.irfs.a_e_a,'s-','MarkerSize',4)
+} 
+dynare NKa.mod
+
+Configuring Dynare ...
+[mex] Generalized QZ.
+[mex] Sylvester equation solution.
+[mex] Kronecker products.
+[mex] Sparse kronecker products.
+[mex] Local state space iteration (second order).
+[mex] Bytecode evaluation.
+[mex] k-order perturbation solver.
+[mex] k-order solution simulation.
+[mex] Quasi Monte-Carlo sequence (Sobol).
+[mex] Markov Switching SBVAR.
+
+Using 64-bit preprocessor
+Starting Dynare (version 4.5.7).
+Starting preprocessing of the model file ...
+Substitution of endo lags >= 2: added 1 auxiliary variables and equations.
+Found 16 equation(s).
+Evaluating expressions...done
+Computing static model derivatives:
+ - order 1
+Computing dynamic model derivatives:
+ - order 1
+Processing outputs ...
+done
+Preprocessing completed.
+
+
+STEADY-STATE RESULTS:
+
+yt                		 0
+Pi                		 0
+y                 		 -0.0359603
+yn                		 -0.0359603
+n                 		 -0.047947
+w                 		 -0.275695
+wn                		 -0.275695
+P                 		 0
+I                 		 1
+r                 		 1
+rn                		 1
+m                 		 -4.03596
+v                 		 0
+a                 		 0
+z                 		 0
+
+EIGENVALUES:
+         Modulus             Real        Imaginary
+
+             0.5              0.5                0
+             0.5              0.5                0
+             0.5              0.5                0
+          0.6653           0.6653                0
+             0.9              0.9                0
+               1                1                0
+            1.25             1.25                0
+           1.518            1.518                0
+
+
+There are 2 eigenvalue(s) larger than 1 in modulus 
+for 2 forward-looking variable(s)
+
+The rank condition is verified.
+
+
+MODEL SUMMARY
+
+  Number of variables:         16
+  Number of stochastic shocks: 4
+  Number of state variables:   6
+  Number of jumpers:           2
+  Number of static variables:  8
+
+
+MATRIX OF COVARIANCE OF EXOGENOUS SHOCKS
+Variables         e_a       e_v       e_z       e_m
+e_a          1.000000  0.000000  0.000000  0.000000
+e_v          0.000000  0.000000  0.000000  0.000000
+e_z          0.000000  0.000000  0.000000  0.000000
+e_m          0.000000  0.000000  0.000000  0.000000
+
+POLICY AND TRANSITION FUNCTIONS
+                                  yt              Pi               y               n              wn               P               I               r               m               a
+Constant                           0               0       -0.035960       -0.047947       -0.275695               0        1.000000        1.000000       -4.035960               0
+P(-1)                      -0.665349       -0.334651       -0.665349       -0.887131       -5.101006        0.665349               0        0.222660               0               0
+m(-1)                       1.192415        0.640918        1.192415        1.589887        9.141851        0.640918        0.083333       -0.357293        1.500000               0
+a(-1)                      -0.647537       -0.252463        0.252463       -0.863383       -4.064453       -0.252463               0        0.142729               0        0.900000
+z(-1)                       0.276564        0.056770        0.276564        0.368752        2.120321        0.056770        0.083333        0.073947               0               0
+m(-2)                      -0.527067       -0.306267       -0.527067       -0.702756       -4.040845       -0.306267       -0.083333        0.134633       -0.500000               0
+e_a                        -0.719486       -0.280514        0.280514       -0.959315       -4.516058       -0.280514               0        0.158588               0        1.000000
+e_z                        -0.553127       -0.113539       -0.553127       -0.737503       -4.240643       -0.113539       -0.166667       -0.147893               0               0
+e_m                         1.054134        0.612533        1.054134        1.405511        8.081690        0.612533        0.166667       -0.269266        1.000000               0
+[警告: Aggregate variance and sum of variances by shocks differ by more than 0.01 %] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('th_autocovariances', 'D:\Program Files (x86)\dynare\4.5.7\matlab\th_autocovariances.m', 206)" style="font-weight:bold">th_autocovariances</a> (<a href="matlab: opentoline('D:\Program Files (x86)\dynare\4.5.7\matlab\th_autocovariances.m',206,0)">line 206</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('disp_th_moments', 'D:\Program Files (x86)\dynare\4.5.7\matlab\disp_th_moments.m', 39)" style="font-weight:bold">disp_th_moments</a> (<a href="matlab: opentoline('D:\Program Files (x86)\dynare\4.5.7\matlab\disp_th_moments.m',39,0)">line 39</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('stoch_simul', 'D:\Program Files (x86)\dynare\4.5.7\matlab\stoch_simul.m', 178)" style="font-weight:bold">stoch_simul</a> (<a href="matlab: opentoline('D:\Program Files (x86)\dynare\4.5.7\matlab\stoch_simul.m',178,0)">line 178</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('NKa', 'D:\work\javascript\yoursilver.github.io\DSGE\1.baseline_nk\money-control\tech-shock\NKa.m', 280)" style="font-weight:bold">NKa</a> (<a href="matlab: opentoline('D:\work\javascript\yoursilver.github.io\DSGE\1.baseline_nk\money-control\tech-shock\NKa.m',280,0)">line 280</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('dynare', 'D:\Program Files (x86)\dynare\4.5.7\matlab\dynare.m', 235)" style="font-weight:bold">dynare</a> (<a href="matlab: opentoline('D:\Program Files (x86)\dynare\4.5.7\matlab\dynare.m',235,0)">line 235</a>)] 
+
+
+THEORETICAL MOMENTS
+VARIABLE         MEAN  STD. DEV.   VARIANCE
+yt             0.0000     0.9298     0.8645
+Pi             0.0000     0.3521     0.1240
+y             -0.0360     1.7209     2.9615
+n             -0.0479     1.2397     1.5369
+wn            -0.2757     5.6395    31.8037
+P                 NaN        NaN        NaN
+I              1.0000     0.0000     0.0000
+r              1.0000     0.2128     0.0453
+m                 NaN        NaN        NaN
+a              0.0000     2.2942     5.2632
+
+
+
+VARIANCE DECOMPOSITION (in percent)
+         e_a     e_v     e_z     e_m
+yt    100.00    0.00    0.00    0.00
+Pi    100.00    0.00    0.00    0.00
+y     100.00    0.00    0.00    0.00
+n     100.00    0.00    0.00    0.00
+wn    100.00    0.00    0.00    0.00
+I       0.00    0.00   50.00   50.00
+r     100.00    0.00    0.00    0.00
+a     100.00    0.00    0.00    0.00
+
+
+
+MATRIX OF CORRELATIONS
+Variables        yt      Pi       y       n      wn       r       a
+yt           1.0000  0.9347 -0.4491  1.0000  0.9621 -0.8046 -0.7422
+Pi           0.9347  1.0000 -0.1023  0.9347  0.9962 -0.9631 -0.4556
+y           -0.4491 -0.1023  1.0000 -0.4491 -0.1885 -0.1693  0.9321
+n            1.0000  0.9347 -0.4491  1.0000  0.9621 -0.8046 -0.7422
+wn           0.9621  0.9962 -0.1885  0.9621  1.0000 -0.9360 -0.5313
+r           -0.8046 -0.9631 -0.1693 -0.8046 -0.9360  1.0000  0.1991
+a           -0.7422 -0.4556  0.9321 -0.7422 -0.5313  0.1991  1.0000
+
+
+
+COEFFICIENTS OF AUTOCORRELATION
+Order         1       2       3       4       5
+yt       0.6327  0.3916  0.2342  0.1320  0.0664
+Pi       0.5821  0.3123  0.1404  0.0327 -0.0329
+y        0.9791  0.9338  0.8754  0.8111  0.7455
+n        0.6327  0.3916  0.2342  0.1320  0.0664
+wn       0.5851  0.3171  0.1460  0.0386 -0.0269
+r        0.6112  0.3579  0.1942  0.0897  0.0241
+a        0.9000  0.8100  0.7290  0.6561  0.5905
+Total computing time : 0h00m01s
+Note: warning(s) encountered in MATLAB/Octave code
