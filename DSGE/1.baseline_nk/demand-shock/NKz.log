@@ -1,0 +1,137 @@
+Starting Dynare (version 4.5.7).
+Starting preprocessing of the model file ...
+Found 15 equation(s).
+Evaluating expressions...done
+Computing static model derivatives:
+ - order 1
+Computing dynamic model derivatives:
+ - order 1
+Processing outputs ...
+done
+Preprocessing completed.
+[警告: 矩阵为奇异工作精度。] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('trust_region>dogleg', 'D:\Program Files (x86)\dynare\4.5.7\matlab\trust_region.m', 202)" style="font-weight:bold">trust_region>dogleg</a> (<a href="matlab: opentoline('D:\Program Files (x86)\dynare\4.5.7\matlab\trust_region.m',202,0)">line 202</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('trust_region', 'D:\Program Files (x86)\dynare\4.5.7\matlab\trust_region.m', 112)" style="font-weight:bold">trust_region</a> (<a href="matlab: opentoline('D:\Program Files (x86)\dynare\4.5.7\matlab\trust_region.m',112,0)">line 112</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('dynare_solve', 'D:\Program Files (x86)\dynare\4.5.7\matlab\dynare_solve.m', 185)" style="font-weight:bold">dynare_solve</a> (<a href="matlab: opentoline('D:\Program Files (x86)\dynare\4.5.7\matlab\dynare_solve.m',185,0)">line 185</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('evaluate_steady_state', 'D:\Program Files (x86)\dynare\4.5.7\matlab\evaluate_steady_state.m', 223)" style="font-weight:bold">evaluate_steady_state</a> (<a href="matlab: opentoline('D:\Program Files (x86)\dynare\4.5.7\matlab\evaluate_steady_state.m',223,0)">line 223</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('steady_', 'D:\Program Files (x86)\dynare\4.5.7\matlab\steady_.m', 55)" style="font-weight:bold">steady_</a> (<a href="matlab: opentoline('D:\Program Files (x86)\dynare\4.5.7\matlab\steady_.m',55,0)">line 55</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('steady', 'D:\Program Files (x86)\dynare\4.5.7\matlab\steady.m', 81)" style="font-weight:bold">steady</a> (<a href="matlab: opentoline('D:\Program Files (x86)\dynare\4.5.7\matlab\steady.m',81,0)">line 81</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('NKz', 'E:\Berkeley_courses\Econ191\DSGE\1.baseline_nk\demand-shock\NKz.m', 250)" style="font-weight:bold">NKz</a> (<a href="matlab: opentoline('E:\Berkeley_courses\Econ191\DSGE\1.baseline_nk\demand-shock\NKz.m',250,0)">line 250</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('dynare', 'D:\Program Files (x86)\dynare\4.5.7\matlab\dynare.m', 235)" style="font-weight:bold">dynare</a> (<a href="matlab: opentoline('D:\Program Files (x86)\dynare\4.5.7\matlab\dynare.m',235,0)">line 235</a>)
+] 
+
+STEADY-STATE RESULTS:
+
+yt 		 0
+Pi 		 0
+y  		 -0.0359603
+yn 		 -0.0359603
+n  		 -0.047947
+w  		 -0.275695
+wn 		 -0.275695
+P  		 0
+I  		 1
+r  		 1
+rn 		 1
+m  		 -4.03596
+v  		 0
+a  		 0
+z  		 0
+
+EIGENVALUES:
+         Modulus             Real        Imaginary
+
+             0.5              0.5                0
+             0.5              0.5                0
+             0.9              0.9                0
+               1                1                0
+           1.182            1.154           0.2533
+           1.182            1.154          -0.2533
+
+
+There are 2 eigenvalue(s) larger than 1 in modulus 
+for 2 forward-looking variable(s)
+
+The rank condition is verified.
+
+
+MODEL SUMMARY
+
+  Number of variables:         15
+  Number of stochastic shocks: 3
+  Number of state variables:   4
+  Number of jumpers:           2
+  Number of static variables:  9
+
+
+MATRIX OF COVARIANCE OF EXOGENOUS SHOCKS
+Variables         e_a       e_v       e_z
+e_a          0.000000  0.000000  0.000000
+e_v          0.000000  0.000000  0.000000
+e_z          0.000000  0.000000  0.250000
+
+POLICY AND TRANSITION FUNCTIONS
+                                  yt              Pi               y               n              wn               P               I               r               m               z
+Constant                           0               0       -0.035960       -0.047947       -0.275695               0        1.000000        1.000000       -4.035960               0
+P(-1)                              0               0               0               0               0        1.000000               0               0        1.000000               0
+v(-1)                      -0.518170       -0.176144       -0.518170       -0.690894       -3.972638       -0.176144        0.171013        0.259085       -1.378367               0
+a(-1)                      -0.173084       -0.272594        0.726916       -0.230778       -0.426975       -0.272594       -0.318026       -0.072692        1.726426               0
+z(-1)                       0.259085        0.088072        0.259085        0.345447        1.986319        0.088072        0.164493        0.120457       -0.310817        0.500000
+e_a                        -0.192315       -0.302882        0.807685       -0.256420       -0.474417       -0.302882       -0.353362       -0.080768        1.918251               0
+e_v                        -1.036340       -0.352287       -1.036340       -1.381787       -7.945276       -0.352287        0.342027        0.518170       -2.756734               0
+e_z                        -0.518170       -0.176144       -0.518170       -0.690894       -3.972638       -0.176144       -0.328987       -0.240915        0.621633       -1.000000
+
+
+THEORETICAL MOMENTS
+VARIABLE         MEAN  STD. DEV.   VARIANCE
+yt             0.0000     0.2992     0.0895
+Pi             0.0000     0.1017     0.0103
+y             -0.0360     0.2992     0.0895
+n             -0.0479     0.3989     0.1591
+wn            -0.2757     2.2936     5.2606
+P                 NaN        NaN        NaN
+I              1.0000     0.1899     0.0361
+r              1.0000     0.1391     0.0193
+m                 NaN        NaN        NaN
+z              0.0000     0.5774     0.3333
+
+
+
+VARIANCE DECOMPOSITION (in percent)
+         e_a     e_v     e_z
+yt      0.00    0.00  100.00
+Pi      0.00    0.00  100.00
+y       0.00    0.00  100.00
+n       0.00    0.00  100.00
+wn      0.00    0.00  100.00
+I       0.00    0.00  100.00
+r       0.00    0.00  100.00
+z       0.00    0.00  100.00
+
+
+
+MATRIX OF CORRELATIONS
+Variables        yt      Pi       y       n      wn       I       r       z
+yt           1.0000  1.0000  1.0000  1.0000  1.0000  1.0000  1.0000  1.0000
+Pi           1.0000  1.0000  1.0000  1.0000  1.0000  1.0000  1.0000  1.0000
+y            1.0000  1.0000  1.0000  1.0000  1.0000  1.0000  1.0000  1.0000
+n            1.0000  1.0000  1.0000  1.0000  1.0000  1.0000  1.0000  1.0000
+wn           1.0000  1.0000  1.0000  1.0000  1.0000  1.0000  1.0000  1.0000
+I            1.0000  1.0000  1.0000  1.0000  1.0000  1.0000  1.0000  1.0000
+r            1.0000  1.0000  1.0000  1.0000  1.0000  1.0000  1.0000  1.0000
+z            1.0000  1.0000  1.0000  1.0000  1.0000  1.0000  1.0000  1.0000
+
+
+
+COEFFICIENTS OF AUTOCORRELATION
+Order         1       2       3       4       5
+yt       0.5000  0.2500  0.1250  0.0625  0.0312
+Pi       0.5000  0.2500  0.1250  0.0625  0.0312
+y        0.5000  0.2500  0.1250  0.0625  0.0313
+n        0.5000  0.2500  0.1250  0.0625  0.0313
+wn       0.5000  0.2500  0.1250  0.0625  0.0313
+I        0.5000  0.2500  0.1250  0.0625  0.0312
+r        0.5000  0.2500  0.1250  0.0625  0.0312
+z        0.5000  0.2500  0.1250  0.0625  0.0313
+Total computing time : 0h00m02s
+Note: warning(s) encountered in MATLAB/Octave code

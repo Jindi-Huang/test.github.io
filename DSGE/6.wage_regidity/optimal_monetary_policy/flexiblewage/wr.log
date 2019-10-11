@@ -1,0 +1,107 @@
+Starting Dynare (version 4.5.7).
+Starting preprocessing of the model file ...
+Found 15 equation(s).
+Evaluating expressions...done
+Computing static model derivatives:
+ - order 1
+Computing dynamic model derivatives:
+ - order 1
+Processing outputs ...
+done
+Preprocessing completed.
+
+STEADY-STATE RESULTS:
+
+yt  		 0
+yn  		 0.0506831
+y   		 0.0506831
+w   		 -0.422359
+wn  		 -0.422359
+wt  		 0
+n   		 0.0675775
+a   		 0
+Pip 		 0
+Piw 		 0
+z   		 0
+v   		 0
+xi1 		 0
+xi2 		 0
+xi3 		 0
+
+EIGENVALUES:
+         Modulus             Real        Imaginary
+
+       3.285e-18        3.285e-18                0
+       8.782e-09        8.782e-09                0
+       6.288e-06        6.288e-06                0
+          0.3098           0.3098                0
+             0.5              0.5                0
+             0.5              0.5                0
+             0.9              0.9                0
+           3.261            3.261                0
+       1.604e+05        1.604e+05                0
+       2.118e+31        2.118e+31                0
+
+
+There are 3 eigenvalue(s) larger than 1 in modulus 
+for 3 forward-looking variable(s)
+
+The rank condition is verified.
+
+
+MODEL SUMMARY
+
+  Number of variables:         15
+  Number of stochastic shocks: 3
+  Number of state variables:   7
+  Number of jumpers:           3
+  Number of static variables:  5
+
+
+MATRIX OF COVARIANCE OF EXOGENOUS SHOCKS
+Variables         e_a       e_z       e_v
+e_a          1.000000  0.000000  0.000000
+e_z          0.000000  0.000000  0.000000
+e_v          0.000000  0.000000  0.000000
+
+POLICY AND TRANSITION FUNCTIONS
+                                  yt             Pip             Piw               w
+Constant                           0               0               0       -0.422359
+wn(-1)                             0               0       -0.999997        0.000003
+wt(-1)                             0               0       -0.999997        0.000003
+a(-1)                              0               0        0.899997        0.899997
+xi1(-1)                    -0.006647       -0.001646       -0.052605       -0.050959
+xi2(-1)                    -0.506343       -0.052605       -3.934562       -3.881957
+e_a                                0               0        0.999996        0.999996
+
+
+THEORETICAL MOMENTS
+VARIABLE         MEAN  STD. DEV.   VARIANCE
+yt             0.0000     0.0000     0.0000
+Pip            0.0000     0.0000     0.0000
+Piw            0.0000     1.0260     1.0526
+w             -0.4224     2.2942     5.2632
+
+
+
+VARIANCE DECOMPOSITION (in percent)
+          e_a     e_z     e_v
+yt     100.00    0.00    0.00
+Pip    100.00    0.00    0.00
+Piw    100.00    0.00    0.00
+w      100.00    0.00    0.00
+
+
+
+MATRIX OF CORRELATIONS
+Variables       Piw       w
+Piw          1.0000  0.2236
+w            0.2236  1.0000
+
+
+
+COEFFICIENTS OF AUTOCORRELATION
+Order         1       2       3       4       5
+Piw     -0.0500 -0.0450 -0.0405 -0.0365 -0.0328
+w        0.9000  0.8100  0.7290  0.6561  0.5905
+Total computing time : 0h00m01s
