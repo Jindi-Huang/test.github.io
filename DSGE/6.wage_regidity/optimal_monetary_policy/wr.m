@@ -33,4 +33,4 @@ plot(0:1:length(baseline.oo_.irfs.w_e_a)-1,flexprice.oo_.irfs.w_e_a,'s-','Marker
 hold on 
 plot(0:1:length(baseline.oo_.irfs.w_e_a)-1,flexwage.oo_.irfs.w_e_a,'d-','MarkerSize',4)
 title('Real wage')
-savefig('wage_price_rigid_a')
+saveas(gcf,'wage_price_rigid_a','png')
