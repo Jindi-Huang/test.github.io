@@ -1,7 +1,7 @@
 nkv = load("interest-policy-shock\NKv_results.mat");
 nkz = load("demand-shock\NKz_results.mat");
 nka = load("tech-shock\NKa_results.mat");
-figure('Name','Baseline','Position',[800,10,400,600])
+figure('Name','Baseline','Position',[800,10,800,1200])
 subplot(5,2,1)
 plot(0:1:15,nkv.oo_.irfs.Pi_e_v,'o-','MarkerSize',4)
 hold on
@@ -9,7 +9,7 @@ plot(0:1:15,nkz.oo_.irfs.Pi_e_z,'d-','MarkerSize',4)
 hold on
 plot(0:1:15,nka.oo_.irfs.Pi_e_a,'s-','MarkerSize',4)
 title('Output gap')
-legend({'monetary policy','discount rate','technology'},'Location','southeast')
+
 
 subplot(5,2,2)
 plot(0:1:15,nkv.oo_.irfs.Pi_e_v*4,'o-','MarkerSize',4)
@@ -43,6 +43,7 @@ plot(0:1:15,nkz.oo_.irfs.wn_e_z,'d-','MarkerSize',4)
 hold on
 plot(0:1:15,nka.oo_.irfs.wn_e_a,'s-','MarkerSize',4)
 title('Real wage')
+legend({'monetary policy','discount rate','technology'},'Location','southeast')
 
 subplot(5,2,6)
 plot(0:1:15,nkv.oo_.irfs.P_e_v,'o-','MarkerSize',4)
