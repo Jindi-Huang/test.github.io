@@ -10,4 +10,5 @@ tags:
     - Macro
 ---
 
-This [on-working Paper]( https://github.com/yoursilver/yoursilver.github.io/blob/master/paper.pdf )is for Econ 191,  concerning the estimate of Chinese Phillips curve using provincial level data. We want to verify the external validity of American centered Phillips Curve. This regional approach has two merits. First, we can absorb the forward looking expectation into the year fixed effect. Second, we can greatly amplify our data. 
+This [on-working Paper]( https://github.com/yoursilver/yoursilver.github.io/blob/master/docs/paper.pdf )is for Econ 191,  concerning the estimate of Chinese Phillips curve using provincial level data. We want to verify the external validity of American centered Phillips Curve. This regional approach has two merits. First, we can absorb the forward looking expectation into the year fixed effect. Second, we can greatly amplify our data. 
+
